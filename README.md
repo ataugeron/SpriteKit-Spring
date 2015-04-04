@@ -1,7 +1,7 @@
-SpriteKit+Spring
+SpriteKit-Spring
 ================
 
-SpriteKit+Spring is a set of extensions to perform spring animations with SpriteKit.
+SpriteKit-Spring is a set of extensions to perform spring animations with SpriteKit.
 
 ## Usage
 
@@ -58,4 +58,4 @@ node.runAction(rotate)
 
 ## License
 
-SpriteKit+Spring is released under the Apache 2 license. See LICENSE for details.
+SpriteKit-Spring is released under the Apache 2 license. See LICENSE for details.
