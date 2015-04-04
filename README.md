@@ -3,6 +3,28 @@ SpriteKit-Spring
 
 SpriteKit-Spring is a set of extensions to perform spring animations with SpriteKit.
 
+## Installation
+
+### iOS 7
+
+If you need to support iOS 7, you can just drop [SpriteKit-Spring.swift](SpriteKit-Spring.swift) in your project.
+
+### iOS 8
+
+If you support iOS 8 only, you can install SpriteKit-Spring as a framework with [CocoaPods](https://cocoapods.org) (version 0.36 or above) by adding the following lines to your ```Podfile```:
+
+```
+use_frameworks!
+
+pod 'SpriteKit-Spring'
+```
+
+You then need to import SpriteKit-Spring wherever you want to use it:
+
+```swift
+import SpriteKit_Spring
+```
+
 ## Usage
 
 In iOS 7, Apple introduced spring animations in UIKit by adding a new animation method on UIView (see [WWDC video](https://developer.apple.com/videos/wwdc/2014/#221) and [UIView documentation](https://developer.apple.com/library/ios/documentation/UIKit/Reference/UIView_Class/index.html#//apple_ref/occ/clm/UIView/animateWithDuration:delay:usingSpringWithDamping:initialSpringVelocity:options:animations:completion:)).
