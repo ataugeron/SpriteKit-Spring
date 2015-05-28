@@ -237,7 +237,7 @@ extension SKAction {
 
             if initialValue == nil {
 
-                initialValue = node.valueForKeyPath(keyPath) as CGFloat
+                initialValue = node.valueForKeyPath(keyPath) as! CGFloat
                 initialDistance = initialDistance ?? finalValue - initialValue
                 finalValue = finalValue ?? initialValue + initialDistance
 
