@@ -225,13 +225,15 @@ extension SKAction {
 
         return animateKeyPath(keyPath, byValue: nil, toValue: finalValue, duration: duration, delay: delay, usingSpringWithDamping: dampingRatio, initialSpringVelocity: velocity)
     }
-
-    private class func animateKeyPath(keyPath: String, var byValue initialDistance: CGFloat!, var toValue finalValue: CGFloat!, duration: NSTimeInterval, delay: NSTimeInterval, usingSpringWithDamping dampingRatio: CGFloat, initialSpringVelocity velocity: CGFloat) -> SKAction {
-
+    
+    private class func animateKeyPath(keyPath: String, byValue: CGFloat!, toValue: CGFloat!, duration: NSTimeInterval, delay: NSTimeInterval, usingSpringWithDamping dampingRatio: CGFloat, initialSpringVelocity velocity: CGFloat) -> SKAction {
+        
         var initialValue: CGFloat!
         var naturalFrequency, dampedFrequency, t1, t2: CGFloat!
         var A, B: CGFloat!
-
+        var finalValue = toValue
+        var initialDistance = byValue
+        
         let animation = SKAction.customActionWithDuration(duration) {
             node, elapsedTime in
 
