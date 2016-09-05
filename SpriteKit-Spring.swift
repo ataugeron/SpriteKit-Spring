@@ -264,8 +264,10 @@ extension SKAction {
                     A = initialDistance
                     B = (naturalFrequency - velocity) * initialDistance
                 } else {
-                    A = (t1 * t2 / (t1 - t2)) * initialDistance * (1/t2 - velocity)
-                    B = (t1 * t2 / (t2 - t1)) * initialDistance * (1/t1 - velocity)
+                    A = (t1 * t2 / (t1 - t2))
+                    A *= initialDistance * (1/t2 - velocity)
+                    B = (t1 * t2 / (t2 - t1))
+                    B *= initialDistance * (1/t1 - velocity)
                 }
             }
 
