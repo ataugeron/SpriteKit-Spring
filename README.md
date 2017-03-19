@@ -21,8 +21,13 @@ pod 'SpriteKit-Spring'
 
 You then need to import SpriteKit-Spring wherever you want to use it:
 
+#### Swift:
 ```swift
 import SpriteKit_Spring
+```
+#### Objective-C:
+```objective-c
+#import <SpriteKit_Spring/SpriteKit_Spring-Swift.h>
 ```
 
 ## Usage

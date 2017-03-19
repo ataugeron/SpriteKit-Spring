@@ -24,7 +24,7 @@ import SpriteKit
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 // MARK: Move
 
-extension SKAction {
+public extension SKAction {
 
     public class func move(by delta: CGVector, duration: TimeInterval, delay: TimeInterval, usingSpringWithDamping dampingRatio: CGFloat, initialSpringVelocity velocity: CGFloat) -> SKAction {
 
@@ -65,7 +65,7 @@ extension SKAction {
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 // MARK: Rotate
 
-extension SKAction {
+public extension SKAction {
 
     public class func rotate(byAngle radians: CGFloat, duration: TimeInterval, delay: TimeInterval, usingSpringWithDamping dampingRatio: CGFloat, initialSpringVelocity velocity: CGFloat) -> SKAction {
 
@@ -82,7 +82,7 @@ extension SKAction {
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 // MARK: Speed
 
-extension SKAction {
+public extension SKAction {
 
     public class func speed(by speed: CGFloat, duration: TimeInterval, delay: TimeInterval, usingSpringWithDamping dampingRatio: CGFloat, initialSpringVelocity velocity: CGFloat) -> SKAction {
 
@@ -99,7 +99,7 @@ extension SKAction {
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 // MARK: Scale
 
-extension SKAction {
+public extension SKAction {
 
     public class func scale(by scale: CGFloat, duration: TimeInterval, delay: TimeInterval, usingSpringWithDamping dampingRatio: CGFloat, initialSpringVelocity velocity: CGFloat) -> SKAction {
 
@@ -142,7 +142,7 @@ extension SKAction {
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 // MARK: Fade
 
-extension SKAction {
+public extension SKAction {
 
     public class func fadeIn(withDuration duration: TimeInterval, delay: TimeInterval, usingSpringWithDamping dampingRatio: CGFloat, initialSpringVelocity velocity: CGFloat) -> SKAction {
 
@@ -169,7 +169,7 @@ extension SKAction {
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 // MARK: Resize
 
-extension SKAction {
+public extension SKAction {
 
     public class func resize(toWidth width: CGFloat, duration: TimeInterval, delay: TimeInterval, usingSpringWithDamping dampingRatio: CGFloat, initialSpringVelocity velocity: CGFloat) -> SKAction {
 
@@ -202,7 +202,7 @@ extension SKAction {
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 // MARK: Colorize
 
-extension SKAction {
+public extension SKAction {
 
     public class func colorize(withColorBlendFactor colorBlendFactor: CGFloat, duration: TimeInterval, delay: TimeInterval, usingSpringWithDamping dampingRatio: CGFloat, initialSpringVelocity velocity: CGFloat) -> SKAction {
 
@@ -214,7 +214,7 @@ extension SKAction {
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 // MARK: - Damping Logic
 
-extension SKAction {
+public extension SKAction {
 
     public class func animate(keyPath: String, byValue initialDistance: CGFloat, duration: TimeInterval, delay: TimeInterval, usingSpringWithDamping dampingRatio: CGFloat, initialSpringVelocity velocity: CGFloat) -> SKAction {
 
@@ -323,7 +323,7 @@ extension SKAction {
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 // MARK: SKNode
 
-extension SKNode {
+public extension SKNode {
 
     var x: CGFloat {
         get {
@@ -352,7 +352,7 @@ extension SKNode {
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 // MARK: SKSpriteNode
 
-extension SKSpriteNode {
+public extension SKSpriteNode {
 
     var width: CGFloat {
         get {
