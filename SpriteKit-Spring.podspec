@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "SpriteKit-Spring"
-  s.version          = "1.0.1"
+  s.version          = "1.1.0"
   s.summary          = "SpriteKit API reproducing UIView's spring animations with SKAction"
   s.homepage         = "https://github.com/ataugeron/SpriteKit-Spring"
   s.screenshots     = "https://ataugeron.github.io/SpriteKit-Spring/bounce_1.gif", "https://ataugeron.github.io/SpriteKit-Spring/bounce_2.gif", "https://ataugeron.github.io/SpriteKit-Spring/bounce_3.gif"

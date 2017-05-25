@@ -244,7 +244,7 @@ public extension SKAction {
             if initialValue == nil {
 
                 initialValue = node.value(forKeyPath: keyPath) as! CGFloat
-                initialDistance = initialDistance ?? finalValue - initialValue!
+                initialDistance = initialDistance != nil ? initialDistance * initialValue - initialValue : finalValue - initialValue!
                 finalValue = finalValue ?? initialValue! + initialDistance
 
                 var magicNumber: CGFloat! // picked manually to visually match the behavior of UIKit
